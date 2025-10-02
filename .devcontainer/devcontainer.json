@@ -13,7 +13,7 @@
     },
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+	"forwardPorts": [4000],
 
 
   "postCreateCommand": "npm install -g @anthropic-ai/claude-code",
