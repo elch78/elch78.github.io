@@ -6,7 +6,7 @@ permalink: /profile/
 
 # Nils Rommelfanger
 
-**Software Engineer Continuous Delivery**
+**Freelance Backend Software Engineer Continuous Delivery**
 
 📍 Amel, Belgium
 📧 [nelhimoud@gmail.com](mailto:nelhimoud@gmail.com)
