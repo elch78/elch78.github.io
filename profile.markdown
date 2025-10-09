@@ -20,13 +20,14 @@ permalink: /profile/
 
 ## About Me
 
-I am a software engineer with a strong DevOps mindset and **20 years of experience** in backend technology. I bring a
+I am a software engineer with a strong Continuous Delivery mindset and **20 years of experience** in backend technology. I bring a
 comprehensive skill set spanning architecture, clean code practices, automated testing, legacy code refactoring,
 deployment pipelines, operations, and observability.
 
-I firmly believe that Continuous Deliver i.e. TDD, feedback loops and a high degree of automation are essential not only
-for delivering high-quality software but also for achieving high development efficiency. By continuously improving every
-aspect of the codebase, I ensure that the software can be developed efficiently and sustainable.
+I firmly believe that Continuous Delivery—TDD, feedback loops, and automation—are essential not only for delivering
+high-quality software but also for achieving high development efficiency. By continuously improving every aspect of the
+codebase, I ensure sustainable and efficient software development.
+
 ---
 
 ## Core Competencies
@@ -51,9 +52,27 @@ PostgreSQL • MySQL • MongoDB • Redis • Apache Kafka • RabbitMQ
 
 **Methodologies:**
 Agile • Scrum • Continuous Delivery • DevOps
-
 ---
 
+## Why Work With Me?
+
+With **20 years of experience** across diverse domains—from IoT platforms and autonomous systems to financial services
+and e-mobility—I bring deep technical expertise combined with a pragmatic, results-oriented approach.
+
+### What I Deliver:
+
+- **Immediate Impact** – I onboard rapidly and contribute from day one (joined projects 1 month before deadline and
+  helped teams ship on time)
+- **Legacy Rescue & Modernization** – I turn struggling codebases into maintainable, efficient systems while keeping
+  them stable
+- **Scalable, Observable Systems** – I build cloud-native architectures that are robust, performant, and easy to operate
+- **Fast, Efficient Delivery** – I practice and promote CD principles, keeping software always release-ready so changes ship rapidly and efficiently while minimizing costly bugs and manual testing overhead
+- **Problem-Solver, Not Just Coder** – I question requirements and challenge existing complexity. My focus is solving real problems, which often means simplifying or removing code rather than building more
+- **Deep Observability** – Comprehensive logging and tracing reduce problem analysis effort and minimize mean time to recovery
+- **Team Acceleration** – I mentor developers and establish best practices that elevate entire teams
+
+Whether you need someone to architect a greenfield project, rescue a critical system, or accelerate your team's
+delivery—I'm ready to deliver results.
 ## Professional Experience
 
 ### Senior Software Engineer | Actico GmbH
@@ -219,23 +238,6 @@ Backoffice tools for AdWords campaigns and custom ORM mapper
 ## Interests
 
 Family • Cooking • Gardening • Technology • DIY
-
----
-
-## Why Work With Me?
-
-With nearly two decades of experience across diverse domains—from IoT platforms and autonomous systems to financial
-services and e-mobility—I bring deep technical expertise combined with a pragmatic, results-oriented approach. I excel
-at:
-
-- **Rapid onboarding** and delivering value from day one
-- **Legacy code modernization** while maintaining stability
-- **Building scalable, observable systems** that are easy to operate
-- **Mentoring teams** and sharing knowledge
-- **Driving quality** through automation and best practices
-
-Whether you need someone to architect a greenfield project, rescue a struggling codebase, or accelerate your team's
-delivery, I'm ready to help.
 
 ---
 
