@@ -229,18 +229,32 @@ body {
   background: linear-gradient(135deg, $gradient-start 0%, $gradient-mid 50%, $gradient-end 100%);
   border-top: none;
   color: white;
+  padding: 1.5rem 0;
 
-  .footer-heading,
-  .contact-list,
-  .social-media-list {
-    color: white;
+  .wrapper {
+    max-width: 900px;
+    margin: 0 auto;
   }
 
-  a {
-    color: rgba(255,255,255,0.9);
+  .footer-content {
+    text-align: center;
 
-    &:hover {
+    p {
+      color: rgba(255,255,255,0.9);
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
+    a {
       color: white;
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px solid transparent;
+      transition: border-bottom-color 0.2s ease;
+
+      &:hover {
+        border-bottom-color: white;
+      }
     }
   }
 }
