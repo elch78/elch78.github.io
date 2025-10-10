@@ -49,6 +49,16 @@ body {
   }
 
   .site-nav {
+    // Hide mobile menu toggle
+    .menu-icon {
+      display: none;
+    }
+
+    // Hide the checkbox used for mobile menu
+    input[type="checkbox"] {
+      display: none;
+    }
+
     .page-link {
       color: white;
       font-weight: 500;
@@ -60,6 +70,7 @@ body {
 
     .trigger {
       background: transparent;
+      display: block !important; // Always show navigation
     }
   }
 }
