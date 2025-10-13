@@ -11,9 +11,11 @@ title: Profile
 📧 [nelhimoud@gmail.com](mailto:nelhimoud@gmail.com)
 📞 +32 (0) 456 950004
 
+<p class="social-links">
 <a href="http://www.linkedin.com/in/nils-rommelfanger" target="_blank"><img src="/assets/images/linkedin-logo.png" alt="LinkedIn" width="32" height="32"></a>
 <a href="https://www.xing.com/profile/Nils_Rommelfanger" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/xing.svg" alt="Xing" width="32" height="32"></a>
 <a href="https://github.com/elch78" target="_blank"><img src="/assets/images/github-mark.svg" alt="GitHub" width="32" height="32"></a>
+</p>
 
 ---
 

@@ -108,9 +108,7 @@ body {
 }
 
 // Contact info and social links
-.post-content p:has(a[href*="linkedin"]),
-.post-content p:has(a[href*="xing"]),
-.post-content p:has(a[href*="github"]) {
+.post-content .social-links {
   display: flex;
   gap: 1rem;
   align-items: center;
@@ -206,13 +204,6 @@ body {
   color: $text-light;
   font-weight: 500;
   font-size: 0.95rem;
-}
-
-// Tech stack highlighting
-.post-content p:has(strong:first-child) {
-  strong:first-child {
-    color: $deep-blue;
-  }
 }
 
 // Code and tech terms
