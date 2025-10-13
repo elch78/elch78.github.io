@@ -224,6 +224,44 @@ body {
   font-size: 0.9em;
 }
 
+// Code blocks
+.post-content pre {
+  background: #f6f8fa;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  margin-top: 0;
+
+  code {
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    display: block;
+    white-space: pre;
+    word-wrap: normal;
+    margin: 0;
+  }
+}
+
+// Syntax highlighted code blocks
+.post-content .highlight {
+  background: #f6f8fa;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+
+  pre {
+    background: transparent;
+    border: none;
+    margin-bottom: 0;
+    box-shadow: none;
+  }
+}
+
 // Footer
 .site-footer {
   background: linear-gradient(135deg, $gradient-start 0%, $gradient-mid 50%, $gradient-end 100%);
