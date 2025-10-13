@@ -31,6 +31,7 @@ github_username: elch78
 # Header navigation
 header_pages:
   - index.markdown
+  - portfolio.markdown
   - blog.markdown
 
 # Build settings
