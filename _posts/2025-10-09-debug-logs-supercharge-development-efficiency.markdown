@@ -9,7 +9,7 @@ When debugging a production issue at 2 AM, the difference between solving it in 
 one thing: **log quality**. Yet many developers treat logging as an afterthought, sprinkling `console.log` or
 `logger.info` statements only when something breaks. This is a costly mistake.
 
-Good application logs—especially debug logs that trace control flow—aren't just helpful for troubleshooting. They're a
+Good application logs, especially debug logs that trace control flow, aren't just helpful for troubleshooting. They're a
 force multiplier for development efficiency. Let me show you why with a real example from a tax calculation system.
 
 ## The Tale of Two Log Levels
@@ -104,7 +104,7 @@ logging needs improvement. This creates a culture where observability is part of
 
 ### **3. Production Diagnostics Without Deploy Cycles**
 
-When production issues arise, you can often solve them by adjusting log levels dynamically—no code changes or
+When production issues arise, you can often solve them by adjusting log levels dynamically, no code changes or
 redeployments needed. This is only possible if you've already instrumented your debug logs properly.
 
 ### **4. Living Documentation**
