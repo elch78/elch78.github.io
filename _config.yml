@@ -32,7 +32,6 @@ github_username: elch78
 header_pages:
   - index.markdown
   - blog.markdown
-  - imprint.markdown
 
 # Build settings
 theme: minima
