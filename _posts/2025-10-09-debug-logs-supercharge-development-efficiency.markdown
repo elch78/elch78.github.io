@@ -90,24 +90,42 @@ Within minutes, you can trace the issue: **exchange rates differed between buy (
 
 ## The ROI of Good Logging
 
-This isn't just about debugging faster. Well-designed debug logs deliver value across the entire development lifecycle:
+This isn't just about debugging faster. Well-designed debug logs deliver value across the entire development lifecycle.
 
-### **1. Faster Onboarding**
+### **1. Faster Development**
+
+Gone are the breakpoints, the tedious stepping through code, and the
+search through nested structures. Now you simply run the test, examine the
+logs, and see the result.
+
+### **2. Faster Onboarding**
 
 New team members can enable DEBUG logs and watch the system explain itself. Instead of reading stale documentation or
 bothering senior developers, they trace through actual execution flows to understand how components interact.
 
-### **2. Better Code Reviews**
+### **3. Better Code Reviews**
 
 When reviewing a complex PR, reviewers can ask: "Can I trace this logic through the logs?" If the answer is no, the
 logging needs improvement. This creates a culture where observability is part of the definition of done.
 
-### **3. Production Diagnostics Without Deploy Cycles**
+### **4. Reduced Cognitive Load**
+
+With comprehensive debug logs, you don't need to fumble with debuggers, step through code, dig into variable watches,
+inspect nested data structures, or hunt for the one relevant field buried five levels deep. The information you need is
+already formatted and waiting in the logs. This dramatically reduces the mental overhead of debugging—you can stay
+focused on solving the problem rather than wrestling with tools to understand the problem.
+
+### **5. Production Diagnostics Without Deploy Cycles**
 
 When production issues arise, you can often solve them by adjusting log levels dynamically, no code changes or
 redeployments needed. This is only possible if you've already instrumented your debug logs properly.
 
-### **4. Living Documentation**
+### **6. Hypothesis Testing**
+
+When investigating unexpected behavior, debug logs let you quickly validate or reject hypotheses. "I think the currency
+conversion happens before fee calculation"—one glance at the logs confirms it.
+
+### **7. Living Documentation**
 
 Debug logs showing control flow are self-documenting. They capture not just what your code does, but **how** it does it,
 with real data. This documentation never goes stale because it's generated from actual execution.
@@ -116,18 +134,6 @@ Tests are another form of living documentation, and they pair beautifully with d
 behavior through examples, while debug logs document actual behavior through execution traces. When a test fails, the
 debug logs explain exactly why, showing you the precise execution path that led to the failure. Together, they create a
 complete picture: tests show what should happen, logs show what did happen.
-
-### **5. Hypothesis Testing**
-
-When investigating unexpected behavior, debug logs let you quickly validate or reject hypotheses. "I think the currency
-conversion happens before fee calculation"—one glance at the logs confirms it.
-
-### **6. Reduced Cognitive Load**
-
-With comprehensive debug logs, you don't need to fumble with debuggers, step through code, dig into variable watches,
-inspect nested data structures, or hunt for the one relevant field buried five levels deep. The information you need is
-already formatted and waiting in the logs. This dramatically reduces the mental overhead of debugging—you can stay
-focused on solving the problem rather than wrestling with tools to understand the problem.
 
 ## Best Practices for Debug Logging
 
