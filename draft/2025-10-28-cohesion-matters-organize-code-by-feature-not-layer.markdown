@@ -27,7 +27,7 @@ glance I suspect, that I can expect low cohesion.
 
 We talk a lot about separation of concerns in software engineering. Keep your HTTP logic separate from your business
 logic. Keep your business logic separate from your database access. That's all good advice that is usually found one
-level deeper in the folders in the form of a UserController and an OrderController.
+level deeper in the folders in the form of a User-/OrderController and User-/OrderService.
 
 But separation of concern has a sibling principle that gets less attention: **cohesion**. While separation of concerns
 is about keeping
@@ -47,20 +47,17 @@ rather than *what it does*.
 
 ## Why Cohesion and Separation of Concerns Matter
 
-Both principles serve the same underlying goal: **managing the complexity**.
+Both principles serve the same underlying goal: **managing complexity**.
 
 Cohesion and separation of concern on a module level create seams in the project, that separate the project into
 isolated compartments. Each compartment has a clear responsibility and well-defined boundaries. You can open
 one compartment, understand what's inside, make changes, and close it again without needing to hold the entire system in
-your head.
+your head. This reduces the cognitive load and makes large codebases more manageable.
 
-This is what reduces the cognitive load and makes large codebases more manageable.
+Also compartment allows to hide things inside. For example the repository can be package private instead of public,
+making it impossible to reach it from outside the module.
 
-Creating the compartment allows to hide things inside. For example the repository can be private instead of public,
-making it impossible to reach it from outside the module. Or, if you want to extract a responsibility into a
-microservice, with high cohesion this is a much easier task.
-
-## A Different Way
+Or, if you want to extract a responsibility into a microservice, with high cohesion this is a much easier task.
 
 Consider organizing the same codebase by feature:
 
@@ -83,40 +80,6 @@ ecommerce/
     ├── ...
 ```
 
-## "But What About Shared Code?"
-
-The most common objection: "What if multiple features need the same utility or validation?"
-
-It depends on what kind of sharing.
-
-True infrastructure like logging, authentication, database connections belongs in shared utilities:
-
-```
-ecommerce/
-├── orders/
-├── users/
-└── common/
-    ├── logging/
-    ├── auth/
-    └── database/
-```
-
-These are genuinely cross-cutting concerns used everywhere. They're stable and provide technical capabilities rather
-than business logic.
-
-For shared business logic, create a focused module. If both orders and subscriptions need tax calculation, create a
-`billing/` module with `TaxCalculator.java`. The `billing` module becomes its own feature with high cohesion around
-billing concerns.
-
-Both `orders/` and `subscriptions/` depend on it. That's fine, , it's an explicit, intentional dependency.
-
-A word of caution though: resist extracting shared modules too early. It's okay to duplicate simple validation logic
-initially. Only extract shared code when the logic is truly identical, stable, and unlikely to diverge.
-
-Premature abstraction can hurt cohesion just as much as scattering code across layers and creating shared abstractions
-creates additional dependencies that make changes more difficult. That is something I also learned recently: DRY must
-not be applied blindly.
-
 ## Making the Transition
 
 If you're maintaining a layer-first codebase, start small. Pick one self-contained feature like "reviews" or "
@@ -130,8 +93,26 @@ as you touch code, you can consolidate it.
 Don't let perfect be the enemy of better.
 
 When I start a new feature or project I usually start with no packages at all and let it evolve. When I notice high
-cohesion between two classes, for example a controller and its DTOs, that is the time when I create a package for them to
+cohesion between two classes, for example a controller and its DTOs, that is the time when I create a package for them
+to
 coexist.
+
+## The other extreme: Microservices from day 1
+
+This is another anti-pattern in my opinion, that I've encountered more than once, that a team decides to start with
+microservices from the beginning.
+
+Microservices are modules two levels up from the package level (artifact->deployment unit). As mentioned earlier, when I
+start with a new codebase I start with no modules at all and let them grow as I learn what I need. A modulith - a
+modular monolith - is the ideal starting point for fast exploration with minimal overhead. Microservices on the other
+hand come with high costs associated with changing interfaces due to marshalling, deployment dependencies, multiple
+codebases. A refactoring in a modulith is done automatically by the IDE in most cases.
+
+Finding the right seams to cut and the right interfaces between them is hard and needs time. Make your life easy as long
+as you can and use a modulith. Only use microservices if you have a good reason. Usually that is when the team has grown
+so big that it becomes unpractical to work on one codebase. With good automated test and Continuous Delivery a modulith
+goes a very long way. In fact I haven't been in the situation that would mandate microservices often. Maybe once or
+twice at most.
 
 ## The Core Principle
 
