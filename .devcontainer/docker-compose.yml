@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  jekyll:
+    image: mcr.microsoft.com/devcontainers/jekyll:2-bullseye
+    volumes:
+      - ..:/IdeaProjects/elch78.github.io:cached
+    ports:
+      - "4000:4000"
+    command: sleep infinity
+    network_mode: bridge
