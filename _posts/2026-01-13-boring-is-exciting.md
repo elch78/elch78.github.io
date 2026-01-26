@@ -105,12 +105,31 @@ improvements habitually, whenever you touch code, compounds over time. What star
 and there gradually transforms your codebase into something genuinely easy and fun to work with. The code
 evolves continuously, and the tests ensure nothing breaks along the way.
 
-What makes code truly understandable is when it's composed like a puzzle of small, coherent pieces—each easy to grasp
-on its own. This principle applies at every level: individual methods, classes, modules, all the way up to deployment
-units. This compartmentalization, the clean seams between components that hide the complexity behind them, is what
-manages cognitive load. You can
-understand one piece without holding the entire system in your head. Interestingly, this isn't just helpful for
-humans, AI tools today also work better with code that's structured in a cognition-friendly way.
+But look at what that simple extract-method actually involved. We didn't just move code around. We performed
+several acts at once:
+
+- **Refactoring** was the process: restructuring code without changing its behavior.
+- **Abstraction** was the result: hiding the details of path parsing behind a method that answers a simple
+  yes-or-no question. The caller no longer needs to know *how* the path is validated, only *what* is being asked.
+- **Naming** was how we communicated the abstraction's intent. `targetsJsonRpcEndpoint` tells the whole story.
+  You don't need to look inside to understand the calling code.
+
+These three tend to go together. A refactoring often creates an abstraction, and an abstraction only
+becomes useful once it has a name that communicates its purpose.
+
+And when you apply this discipline consistently, not just to a single method but across your entire
+codebase, you get **modularization**: code composed of coherent pieces, each easy to grasp on its own.
+This principle applies at every level: individual methods, classes, modules, all the way up to deployment
+units. The clean seams between components hide complexity behind them and manage cognitive load. You can
+understand one piece without holding the entire system in your head.
+
+That's what **clean code** really is. Not a set of formatting rules or naming conventions applied mechanically.
+It's the emergent property of code that has been continuously refactored into well-named abstractions, organized
+into cohesive modules. Abstraction, naming, modularization, and refactoring aren't separate techniques you learn
+in isolation — they are facets of the same fundamental activity: making code boring.
+
+Interestingly, this isn't just helpful for humans. AI tools today also work better with code that's structured
+in a cognition-friendly way.
 
 ## The Value of Boring
 
@@ -123,8 +142,7 @@ Boring software doesn't mean uninspired or lazy. It means:
 - **Enjoyable** Last but not least
 
 Clean Code isn't a new idea, it's decades old. Yet the industry still treats boring, maintainable code as optional
-rather than essential.
-The next time you're tempted to write something clever, ask yourself: can I make this boring instead?
+rather than essential (wasting time on bad code is wasting resources).
 
 Boring code is a gift to your future self, your teammates, and everyone who comes after you. It's the difference
 between a codebase people dread touching and one they actually enjoy working with.
