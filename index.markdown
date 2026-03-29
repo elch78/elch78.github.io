@@ -8,7 +8,7 @@ title: Profile
 **Freelance Backend Software Engineer Continuous Delivery**
 
 📍 Amel, Belgium
-📧 [nelhimoud@gmail.com](mailto:nelhimoud@gmail.com)
+📧 [nils_rommelfanger@pm.me](mailto:nelhimoud@gmail.com)
 📞 +32 (0) 456 950004
 
 <p class="social-links">
@@ -75,6 +75,17 @@ and e-mobility—I bring deep technical expertise combined with a pragmatic, res
 Whether you need someone to architect a greenfield project, rescue a critical system, or accelerate your team's
 delivery—I'm ready to deliver results.
 ## Professional Experience
+
+### Senior Software Engineer | European Commission - Health and Food Safety
+
+**March 2026 - Today**
+
+- Rapid Onboarding & Impact: Contributing from day two. Taking responsibility for the project.
+- Improved the reliability of the tests and the pipeline.
+
+**Tech Stack:** Java 17, Vert.x, Rest, JUnit, Mockito, 12 Factor App, MongoDB, OpenApi, Continuous Deliver (CI/CD),
+Refactoring, Quality Assurance, Observability, Slf4J, Log4J2, Agile Scrum, Git, Gitlab, Secure Coding, Clean Code,
+Linux, Jira, Confluence
 
 ### Senior Software Engineer | Actico GmbH
 
