@@ -17,23 +17,35 @@ The project uses a DevContainer setup with:
 
 ## Common Commands
 
+The project is developed inside a VM without a local Ruby toolchain. Jekyll runs
+in a Docker container defined by `docker-compose.yml` (Ruby 3.3 image). Gems are
+installed into a named volume (`bundle`) on first start and cached afterwards.
+
 ### Build and Serve
 ```bash
-bundle exec jekyll serve
+docker compose up        # foreground, logs visible
+docker compose up -d     # detached
 ```
-Starts development server at http://localhost:4000 with auto-regeneration enabled.
+Runs `bundle install` then `bundle exec jekyll serve` inside the container.
+Serves at http://localhost:4000 with auto-regeneration (`--force_polling` for
+reliable file watching on mounted volumes) and LiveReload on port 35729.
+
+```bash
+docker compose down      # stop and remove the container
+docker compose logs -f   # follow logs
+```
 
 ### Build Only
 ```bash
-bundle exec jekyll build
+docker compose run --rm jekyll bundle exec jekyll build
 ```
 Generates static site to `_site/` directory without starting a server.
 
-### Install Dependencies
+### Update Dependencies
 ```bash
-bundle install
+docker compose run --rm jekyll bundle install
 ```
-Run after Gemfile changes or initial setup.
+Run after Gemfile changes (it also runs automatically on `docker compose up`).
 
 ## Architecture
 
