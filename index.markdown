@@ -95,8 +95,10 @@ Joined the project one month before deadline and immediately contributed from da
 comfortably.
 
 - Improved exception logging, reducing boilerplate by 80%
-- Resolved bugs related to sorting and translation
+- Addressed and resolved multiple bugs related to sorting and translation, improving system reliability and user experience.
 - Enhanced test quality to validate correct behavior
+- Implemented two critical features, including one at the core of the sanction list monitoring logic, improving the user experience.
+- Quality Assurance: I enhanced the test readability and quality with acceptance tests contributing to more robust and maintainable code and more stable tests.
 
 **Tech Stack:** Java 17, Spring Boot, JUnit, Mockito, Postgres, Liquibase, JPA, Spring Security, Mapstruct, OpenAPI,
 Grafana, CI/CD

@@ -20,8 +20,7 @@ directory, their corresponding services in another, and repositories in a third.
 Everything looks clean and organized. The codebase follows the classic three-tier architecture. You can tell immediately
 which files handle HTTP requests, which contain business logic, and which talk to the database.
 
-I've learned to recognize this as a red flag, though, that jumps right into my face in many repositories. From the first
-glance I suspect, that I can expect low cohesion.
+I've learned to recognize this as a red flag, though. When I encounter a top level structure like this I immediately suspect, that I can expect low cohesion beneath.
 
 ## Cohesion: The Other Side of Separation of Concerns
 
@@ -54,10 +53,14 @@ isolated compartments. Each compartment has a clear responsibility and well-defi
 one compartment, understand what's inside, make changes, and close it again without needing to hold the entire system in
 your head. This reduces the cognitive load and makes large codebases more manageable.
 
-Also compartment allows to hide things inside. For example the repository can be package private instead of public,
-making it impossible to reach it from outside the module.
+Also, compartments allows to hide things inside. Similar to a class protecting its internal structure from the outside
+(and vice versa) a module can hide it's internal complexity for example by making a repository package private. This wayyy
+it is inaccessible for code outside of the package. With a mindful public API the module presents a simpler interface to 
+the outside hiding the internal complexity.
 
-Or, if you want to extract a responsibility into a microservice, with high cohesion this is a much easier task.
+Clean modularization on the package level also makes refactoring easier. If you want to replace a functionality you don't
+have to search for the part. Or, if you want to extract a functionality into a microservice, with high cohesion this 
+is a much easier task.
 
 Consider organizing the same codebase by feature:
 
