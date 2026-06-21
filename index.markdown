@@ -29,6 +29,11 @@ I firmly believe that Continuous Delivery—TDD, feedback loops, and automation�
 high-quality software but also for achieving high development efficiency. By continuously improving every aspect of the
 codebase, I ensure sustainable and efficient software development.
 
+Just as important as the code itself is **clear communication**. I see it as one of my core strengths: I ask the right
+questions to uncover what a requirement is really about, translate between business and engineering. Good software grows
+out of good conversations—and over years of remote and cross-cultural collaboration I have learned to keep those 
+conversations clear, honest, and focused on the actual problem.
+
 ---
 
 ## Core Competencies
@@ -53,6 +58,12 @@ PostgreSQL • MySQL • MongoDB • Redis • Apache Kafka • RabbitMQ
 
 **Methodologies:**
 Agile • Scrum • Continuous Delivery • DevOps
+
+**Communication & Collaboration:**
+Stakeholder Communication • Requirements Clarification • Bridging Business & Engineering • Mentoring & Knowledge Sharing • Remote & Cross-Cultural Teamwork • Technical Writing
+
+**AI-Assisted Development:**
+Agentic Coding • Claude Code • AI Pair Programming • Prompt & Context Engineering
 ---
 
 ## Why Work With Me?
@@ -69,6 +80,8 @@ and e-mobility—I bring deep technical expertise combined with a pragmatic, res
 - **Scalable, Observable Systems** – I build cloud-native architectures that are robust, performant, and easy to operate
 - **Fast, Efficient Delivery** – I practice and promote CD principles, keeping software always release-ready so changes ship rapidly and efficiently while minimizing costly bugs and manual testing overhead
 - **Problem-Solver, Not Just Coder** – I question requirements and challenge existing complexity. My focus is solving real problems, which often means simplifying or removing code rather than building more
+- **Clear Communication** – I ask the questions others don't, translate between business and engineering, and make complex trade-offs easy to understand—so the whole team pulls in the same direction
+- **AI-Augmented Delivery** – I work effectively with agentic coding tools like Claude Code, applying the same engineering discipline—tests, reviews, clear requirements—to keep AI-assisted output fast *and* trustworthy
 - **Deep Observability** – Comprehensive logging and tracing reduce problem analysis effort and minimize mean time to recovery
 - **Team Acceleration** – I mentor developers and establish best practices that elevate entire teams
 
