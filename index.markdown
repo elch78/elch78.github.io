@@ -75,10 +75,10 @@ and e-mobility—I bring deep technical expertise combined with a pragmatic, res
 
 - **Immediate Impact** – I onboard rapidly and contribute from day one (joined projects 1 month before deadline and
   helped teams ship on time)
+- **Fast, Efficient Delivery** – I practice and promote CD principles, keeping software always release-ready so changes ship rapidly and efficiently while minimizing costly bugs and manual testing overhead
 - **Legacy Rescue & Modernization** – I turn struggling codebases into maintainable, efficient systems while keeping
   them stable
 - **Scalable, Observable Systems** – I build cloud-native architectures that are robust, performant, and easy to operate
-- **Fast, Efficient Delivery** – I practice and promote CD principles, keeping software always release-ready so changes ship rapidly and efficiently while minimizing costly bugs and manual testing overhead
 - **Problem-Solver, Not Just Coder** – I question requirements and challenge existing complexity. My focus is solving real problems, which often means simplifying or removing code rather than building more
 - **Clear Communication** – I ask the questions others don't, translate between business and engineering, and make complex trade-offs easy to understand—so the whole team pulls in the same direction
 - **AI-Augmented Delivery** – I work effectively with agentic coding tools like Claude Code, applying the same engineering discipline—tests, reviews, clear requirements—to keep AI-assisted output fast *and* trustworthy
@@ -95,10 +95,32 @@ delivery—I'm ready to deliver results.
 
 - Rapid Onboarding & Impact: Contributing from day two. Taking responsibility for the project.
 - Improved the reliability of the tests and the pipeline.
+- Rapid Onboarding & Impact: Contributing from day two. Taking responsibility for the project.
+- Migrated authentication from an external dependency (frequently offline and a pipeline blocker) 
+to a native Vert.x/Keycloak OAuth2 integration, eliminating the external dependency.
+- Implemented public and private search APIs with enum filters and DB projections (MongoDB) to reduce response payloads.
+- Built a BDD-enabled integration test framework with Testcontainers (Keycloak, MongoDB, HubStore). 
+The tests are resilient to internal refactorings and describe business behavior.
+- Fixed flaky tests and made the pipeline reliable which was ignoring failed tests before.
+- Introduced OpenTelemetry tracing and structured logging for production observability.
+- Systematic refactoring: singleton elimination, explicit dependency injection and standardized error handling
+following RFC 9457. Fixed several bugs in the process.
+- Security hardening: global security baseline, role-based authorization and remediation
+of vulnerabilities and several security relevant bugs.
+- Worked extensively with agentic coding tools, established guardrails (tests, reviews,
+clear requirements) to keep AI-assisted output reliable, and supported colleagues in
+adopting them.
+- Upgraded Java from 17 to 26, cleaned up dependencies and consolidated the CI/CD
+pipeline.
+- Supported policy unit with quality control of another contractor.
 
-**Tech Stack:** Java 17, Vert.x, Rest, JUnit, Mockito, 12 Factor App, MongoDB, OpenApi, Continuous Deliver (CI/CD),
-Refactoring, Quality Assurance, Observability, Slf4J, Log4J2, Agile Scrum, Git, Gitlab, Secure Coding, Clean Code,
-Linux, Jira, Confluence
+**Tech Stack:** Java 26, Vert.x, Rest, JUnit, Mockito, Testcontainers, Behavior Driven Development
+(BDD), Acceptance Test Driven Development (ATDD), Test Driven Development
+(TDD), 12 Factor App, MongoDB, OpenApi, OAuth2, OpenID Connect, Keycloak,
+Continuous Delivery (CI/CD), Trunk Based Development, Refactoring, RFC 9457,
+Quality Assurance, Observability, OpenTelemetry, Distributed Tracing, Structured
+Logging, Slf4J, Logback, OpenRewrite, Agentic Coding, Claude Code, Kiro, Agile
+Scrum, Git, Gitlab, Secure Coding, Clean Code, Linux, Jira, Confluence 
 
 ### Senior Software Engineer | Actico GmbH
 
