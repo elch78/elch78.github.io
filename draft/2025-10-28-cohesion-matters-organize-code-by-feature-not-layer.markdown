@@ -5,7 +5,7 @@ date: 2025-10-28 10:00:00 +0000
 categories: software-engineering architecture design
 ---
 
-What I often see when I've cloned a new repository is this:
+Often, when I come to a new project and check out the repository, what meets me is this:
 
 ```
 src/
@@ -20,7 +20,8 @@ directory, their corresponding services in another, and repositories in a third.
 Everything looks clean and organized. The codebase follows the classic three-tier architecture. You can tell immediately
 which files handle HTTP requests, which contain business logic, and which talk to the database.
 
-I've learned to recognize this as a red flag, though. When I encounter a top level structure like this I immediately suspect, that I can expect low cohesion beneath.
+I've learned to recognize this as a red flag, though, because it is a clear sign of low cohesion. What this structure
+shows in the first second is that the project lacks modularization.
 
 ## Cohesion: The Other Side of Separation of Concerns
 
