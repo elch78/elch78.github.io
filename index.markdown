@@ -29,6 +29,12 @@ I firmly believe that Continuous Delivery—TDD, feedback loops, and automation�
 high-quality software but also for achieving high development efficiency. By continuously improving every aspect of the
 codebase, I ensure sustainable and efficient software development.
 
+Most software spends far more of its life being read and changed than being written. Writing code that merely works
+today is the easy part; the harder—and far more valuable—skill is writing code that is still cheap to change next year.
+That is where I focus: readable, well-structured code, backed by tests that make change safe. The result is a lower total
+cost of ownership—fewer defects, faster changes, and less time spent deciphering what an earlier author intended—which is
+what justifies an experienced engineer's rate.
+
 Just as important as the code itself is **clear communication**. I see it as one of my core strengths: I ask the right
 questions to uncover what a requirement is really about, translate between business and engineering. Good software grows
 out of good conversations—and over years of remote and cross-cultural collaboration I have learned to keep those 
@@ -76,6 +82,9 @@ and e-mobility—I bring deep technical expertise combined with a pragmatic, res
 - **Immediate Impact** – I onboard rapidly and contribute from day one (joined projects 1 month before deadline and
   helped teams ship on time)
 - **Fast, Efficient Delivery** – I practice and promote CD principles, keeping software always release-ready so changes ship rapidly and efficiently while minimizing costly bugs and manual testing overhead
+- **Lower Total Cost of Ownership** – Code is read and changed far more often than it is written, so I optimise for the
+  long game: readable, well-structured code backed by tests that make change safe. Fewer defects, faster changes, and
+  easier onboarding mean the true cost of a feature keeps falling long after it ships
 - **Legacy Rescue & Modernization** – I turn struggling codebases into maintainable, efficient systems while keeping
   them stable
 - **Scalable, Observable Systems** – I build cloud-native architectures that are robust, performant, and easy to operate
