@@ -21,13 +21,18 @@ title: Profile
 
 ## About Me
 
-I am a software engineer with a strong Continuous Delivery mindset and **20 years of experience** in backend technology. I bring a
-comprehensive skill set spanning architecture, clean code practices, automated testing, legacy code refactoring,
-deployment pipelines, operations, and observability.
+I am a backend software engineer with a strong Continuous Delivery mindset and **20 years of hands-on experience**. My
+promise: high-quality software, delivered reliably and fast—never one at the expense of the other. Clean Code,
+Continuous Integration and Continuous Delivery, Test-Driven Development and fast feedback loops are the foundation of
+everything I build, and I consistently favour simplicity over complexity. This keeps software in a releasable state at
+all times: dependable, quick to ship, and easy to maintain.
 
-I firmly believe that Continuous Delivery—TDD, feedback loops, and automation—are essential not only for delivering
-high-quality software but also for achieving high development efficiency. By continuously improving every aspect of the
-codebase, I ensure sustainable and efficient software development.
+I get productive fast, usually delivering first results by day two or three. And I am at my best turning troubled
+projects around: repeatedly I have taken over stalled or legacy code bases, stabilised them and had them back on track
+within a short time—through targeted refactoring, automated testing, and pragmatic prioritisation.
+
+Across the whole backend lifecycle I bring a comprehensive skill set: system architecture, clean code practices,
+automated testing, legacy code refactoring, deployment pipelines, operations, and observability.
 
 Most software spends far more of its life being read and changed than being written. Writing code that merely works
 today is the easy part; the harder—and far more valuable—skill is writing code that is still cheap to change next year.
@@ -37,8 +42,12 @@ what justifies an experienced engineer's rate.
 
 Just as important as the code itself is **clear communication**. I see it as one of my core strengths: I ask the right
 questions to uncover what a requirement is really about, translate between business and engineering. Good software grows
-out of good conversations—and over years of remote and cross-cultural collaboration I have learned to keep those 
+out of good conversations—and over years of remote and cross-cultural collaboration I have learned to keep those
 conversations clear, honest, and focused on the actual problem.
+
+Part of that is speaking up early. When I see a risk, a flawed assumption, or a problem quietly building up, I put it on
+the table while it is still cheap to fix—with a concrete proposal attached, not just a warning. Surprises late in a
+project are expensive; an uncomfortable conversation early is not.
 
 ---
 
@@ -79,8 +88,8 @@ and e-mobility—I bring deep technical expertise combined with a pragmatic, res
 
 ### What I Deliver:
 
-- **Immediate Impact** – I onboard rapidly and contribute from day one (joined projects 1 month before deadline and
-  helped teams ship on time)
+- **Immediate Impact** – I onboard rapidly and deliver first results by day two or three (joined a project 1 month
+  before deadline and helped the team ship on time)
 - **Fast, Efficient Delivery** – I practice and promote CD principles, keeping software always release-ready so changes ship rapidly and efficiently while minimizing costly bugs and manual testing overhead
 - **Lower Total Cost of Ownership** – Code is read and changed far more often than it is written, so I optimise for the
   long game: readable, well-structured code backed by tests that make change safe. Fewer defects, faster changes, and
@@ -90,6 +99,7 @@ and e-mobility—I bring deep technical expertise combined with a pragmatic, res
 - **Scalable, Observable Systems** – I build cloud-native architectures that are robust, performant, and easy to operate
 - **Problem-Solver, Not Just Coder** – I question requirements and challenge existing complexity. My focus is solving real problems, which often means simplifying or removing code rather than building more
 - **Clear Communication** – I ask the questions others don't, translate between business and engineering, and make complex trade-offs easy to understand—so the whole team pulls in the same direction
+- **Problems Raised Early** – I flag risks and flawed assumptions while they are still cheap to fix, with a concrete proposal attached—no silent drift towards a late surprise
 - **AI-Augmented Delivery** – I work effectively with agentic coding tools like Claude Code, applying the same engineering discipline—tests, reviews, clear requirements—to keep AI-assisted output fast *and* trustworthy
 - **Deep Observability** – Comprehensive logging and tracing reduce problem analysis effort and minimize mean time to recovery
 - **Team Acceleration** – I mentor developers and establish best practices that elevate entire teams
@@ -104,7 +114,6 @@ delivery—I'm ready to deliver results.
 
 - Rapid Onboarding & Impact: Contributing from day two. Taking responsibility for the project.
 - Improved the reliability of the tests and the pipeline.
-- Rapid Onboarding & Impact: Contributing from day two. Taking responsibility for the project.
 - Migrated authentication from an external dependency (frequently offline and a pipeline blocker) 
 to a native Vert.x/Keycloak OAuth2 integration, eliminating the external dependency.
 - Implemented public and private search APIs with enum filters and DB projections (MongoDB) to reduce response payloads.
