@@ -1,0 +1,18 @@
+{% comment %}
+An image as wide as the text with a caption. A click on it opens the image in full size.
+
+Parameters:
+  src      the image shown in the text, scaled down to the width of the layout
+  full     the image in full size; without it the click opens `src`
+  alt      what the image shows, for readers who cannot see it
+  caption  the visible caption below the image, in Markdown; optional
+{% endcomment %}
+{% assign full = include.full | default: include.src %}
+<figure class="post-figure">
+  <a href="{{ full | relative_url }}" title="Open the image in full size">
+    <img src="{{ include.src | relative_url }}" alt="{{ include.alt | escape }}" loading="lazy">
+  </a>
+  {% if include.caption %}
+  <figcaption>{{ include.caption | markdownify | remove: '<p>' | remove: '</p>' | strip }}</figcaption>
+  {% endif %}
+</figure>
